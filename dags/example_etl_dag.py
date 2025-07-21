@@ -27,7 +27,7 @@ with DAG(
     dag_id='example_etl_dag',
     default_args=default_args,
     description='A simple ETL DAG',
-    schedule_interval=timedelta(days=1),
+    schedule=timedelta(days=1),
     start_date=datetime(2025, 7, 20),
     catchup=False,
     tags=['example', 'etl'],
